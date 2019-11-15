@@ -13,6 +13,7 @@ while cond:
         continue
 nm = ""
 count = 0
+num = 0
 for char in message:
     if char.isalpha() and char.isupper():
         if (ord(char)+shift) > 90: 
