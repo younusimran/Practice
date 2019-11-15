@@ -23,6 +23,8 @@ for char in message:
                 #count += 90 - 65 + 1
                 if count < shift:
                     num = shift - count
+                else:
+                    num = shift - (count - 26)
             count = 0
             nm += chr((65+num-1))
             num = 0
@@ -37,6 +39,8 @@ for char in message:
                 #count += 122 - 97 + 1
                 if count < shift:
                     num = shift - count
+                else:
+                    num = shift - (count - 26)
             count = 0
             nm += chr((97+num-1))
             num = 0
